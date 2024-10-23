@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .outer {
+            display: flex;
+            background-color: #20e8fa;
+            justify-content: left; /*will center horizontally*/
+            padding: 20px 20px;
+            /*height: 350px;*/
+
+        }
+
+        .inner {
+            background-color: #83e807;
+            width: 40%;
+            padding: 20px;
+            border-radius: 40px;
+
+        }
+
+        .inner p {
+            color: #090808;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 20px;
+        }
+        .smaller{
+            width: 20%;
+            height: 100px;
+            background-color: #3e650e;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            justify-content: center; /*Horizontal alignment*/
+            align-items: center; /* Vertical alignmenr*/
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="outer">
+    <div class="inner">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur dolore ea eligendi, error et
+        expedita hic natus nisi nobis numquam porro quae, quas repudiandae rerum sunt tempora unde voluptatem!</span><span>Deleniti
+        excepturi fuga neque! Minus non recusandae tempora voluptatibus. Aliquam doloribus impedit labore? Aperiam, aspernatur eius, ex
+        nam non praesentium quae quaerat quam quasi repellendus vitae voluptates voluptatum. Facere, possimus!</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut, consectetur dolorem ex laboriosam
+            molestias praesentium
+            sequi similique soluta, sunt totam ullam. Amet dicta id illum obcaecati qui similique, tempore.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="smaller">1</div>
+    <div class="smaller">2</div>
+    <div class="smaller">3</div>
+    <div class="smaller">4</div>
+</div>
+
+</body>
+</html>
